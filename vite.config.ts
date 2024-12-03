@@ -11,6 +11,9 @@ export default defineConfig({
       strict: false, // Permite servir archivos fuera de la raíz del proyecto si es necesario
     },
   },
+  define: {
+    'process.env': process.env, // Asegúrate de pasar las variables de entorno
+  },
   base: './', // Asegúrate de que la base esté configurada para rutas relativas
 });
 
